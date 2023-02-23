@@ -51,10 +51,10 @@ export const ProductTable: React.FC<Props> = (props) => {
             </td>
 
             <td data-cy="ProductName">
-              {product.name}
+              {`${product?.icon} - ${product.name}`}
             </td>
             <td data-cy="ProductCategory">
-              {`${product.category?.icon} - ${product.category?.title}`}
+              {product.category?.title}
             </td>
 
             <td
